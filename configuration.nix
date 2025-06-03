@@ -39,36 +39,4 @@
         pkgs.docker
         pkgs.nakama
     ];
-
-  fonts = {
-    fontconfig.enable = true;
-    enableFontDir = true;
-    enableGhostscriptFonts = true;
-    fonts = with pkgs; [
-      corefonts
-      dejavu_fonts
-      inconsolata
-      source-han-sans-japanese
-      source-han-sans-korean
-      source-han-sans-simplified-chinese
-      source-han-sans-traditional-chinese
-      ubuntu_font_family
-    ];
-  };
-
-  security.sudo.enable = true;
-
-  nix = {
-    package = pkgs.nixUnstable;
-    trustedBinaryCaches = [
-      "http://cache.nixos.org"
-    ];
-
-    binaryCaches = [
-      "http://cache.nixos.org"
-    ];
-
-    gc.automatic = false;
-    maxJobs = pkgs.stdenv.lib.mkForce 6;
-  };
 }
