@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
-    ];
+  #imports =
+   # [ # Include the results of the hardware scan.
+    #  <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
+    #];
 
   networking = {
     firewall = {
