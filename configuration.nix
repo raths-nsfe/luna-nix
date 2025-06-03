@@ -1,11 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  fileSystems."/data" =
-  {
-    device = "/dev/sda";
-    fsType = "ext4";
-  };
+    imports =
+    [
+      <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
+    ];
   #bootloader
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "dev/sda";
