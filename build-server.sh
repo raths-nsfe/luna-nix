@@ -1,1 +1,1 @@
-sudo rm -rf /etc/nixos/configuration.nix && sudo ln -s ~/luna-nix/configuration.nix /etc/nixos/configuration.nix && sudo nixos-rebuild switch
+sudo rm -rf /etc/nixos/configuration.nix && sudo ln -s /home/nixos/luna-nix/configuration.nix /etc/nixos/configuration.nix && sudo nixos-rebuild switch
