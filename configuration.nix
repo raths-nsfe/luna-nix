@@ -6,7 +6,7 @@
     <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
   ];
   #bootloader
-  #boot.loader.grub.enable = true;
+  boot.loader.grub.enable = true;
   #boot.loader.grub.device = "dev/sda";
   #boot.loader.grub.useOSProber = true;
 
