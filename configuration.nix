@@ -13,8 +13,6 @@
       allowedUDPPorts = [];
     };
     hostName = "luna";
-    networkmanager.enable = true;
-
   };
 
   programs.ssh.startAgent = true;
